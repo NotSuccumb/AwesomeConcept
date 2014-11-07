@@ -1,0 +1,234 @@
+@charset "UTF-8";
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, img, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+footer, header, nav {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ul {
+  list-style: none; }
+
+body {
+  background: url("../images/bg-image.jpg") no-repeat top center #4d5961;
+  font: 13px/1.1em "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  body h2, body h3, body h4 {
+    font-weight: bold; }
+  body a {
+    text-decoration: none; }
+
+header {
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #abacac; }
+  header div {
+    margin: 0 auto;
+    width: 960px; }
+    header div h1 {
+      font-size: 24px;
+      line-height: 20px;
+      text-transform: uppercase;
+      float: left;
+      padding: 30px 0; }
+      header div h1 a {
+        color: #464646; }
+        header div h1 a span {
+          color: #ff0000;
+          font-weight: bold; }
+    header div nav {
+      float: right; }
+      header div nav ul li {
+        float: left;
+        padding: 22px 0; }
+        header div nav ul li:last-child a {
+          border-right: 0; }
+        header div nav ul li.active {
+          border-bottom: 3px solid #ff0000; }
+          header div nav ul li.active a {
+            color: #ff0000;
+            font-weight: bold; }
+        header div nav ul li a {
+          display: inline-block;
+          padding: 0 25px;
+          font-size: 14px;
+          line-height: 34px;
+          color: #000000;
+          border-right: 1px dotted #cacaca; }
+          header div nav ul li a:hover {
+            color: #ff0000; }
+
+.hero {
+  width: 960px;
+  margin: 0 auto;
+  padding: 160px 0 125px 0; }
+  .hero div {
+    width: 415px; }
+    .hero div h2 {
+      font-size: 40px;
+      color: #ffffff;
+      line-height: 40px;
+      letter-spacing: -1px;
+      padding-bottom: 20px; }
+    .hero div p {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 20px;
+      padding-right: 30px;
+      padding-bottom: 20px; }
+    .hero div a {
+      display: block;
+      padding: 15px 25px;
+      width: 90px;
+      background-color: #b45a29;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      background: #d49b48;
+      background: -webkit-linear-gradient(#d49b48, #b45a29);
+      background: -o-linear-gradient(#d49b48, #b45a29);
+      background: -moz-linear-gradient(#d49b48, #b45a29);
+      background: linear-gradient(#d49b48, #b45a29);
+      background: -ms-linear-gradient(#d49b48, #b45a29);
+      -webkit-border-radius: 25;
+      -moz-border-radius: 25;
+      border-radius: 25px; }
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+  padding-bottom: 55px; }
+  .content .tab-area {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3pxpx;
+    background-color: #ffffff;
+    background: -webkit-linear-gradient(left, #ffffff, #ffffff, #d6d6d6);
+    background: -o-linear-gradient(left, #ffffff, #ffffff, #d6d6d6);
+    background: -moz-linear-gradient(left, #ffffff, #ffffff, #d6d6d6);
+    background: linear-gradient(left, #ffffff, #ffffff, #d6d6d6);
+    background: -ms-linear-gradient(left, #ffffff, #d6d6d6); }
+    .content .tab-area .tabs ul {
+      display: table;
+      width: 100%; }
+      .content .tab-area .tabs ul li {
+        display: table-cell;
+        text-align: center;
+        cursor: pointer;
+        padding: 25px 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #bc7f4b;
+        border-left: 1px solid #d9a375;
+        border-right: 1px solid #a67142;
+        border-collapse: collapse;
+        background: #d89256;
+        background: -webkit-linear-gradient(#d89256, #bc7f4b);
+        background: -o-linear-gradient(#d89256, #bc7f4b);
+        background: -moz-linear-gradient(#d89256, #bc7f4b);
+        background: linear-gradient(#d89256, #bc7f4b);
+        background: -ms-linear-gradient(#d89256, #bc7f4b); }
+        .content .tab-area .tabs ul li:first-child {
+          border-top-left-radius: 3px;
+          border-left: 1px solid transparent; }
+        .content .tab-area .tabs ul li:last-child {
+          border-top-right-radius: 3px;
+          border-right: 1px solid transparent; }
+        .content .tab-area .tabs ul li.active {
+          color: #000000;
+          background: transparent;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent; }
+    .content .tab-area .tab-content {
+      padding: 35px 20px 45px 30px;
+      height: 335px; }
+      .content .tab-area .tab-content ul li {
+        display: none; }
+        .content .tab-area .tab-content ul li.active {
+          display: block; }
+        .content .tab-area .tab-content ul li div {
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box; }
+        .content .tab-area .tab-content ul li .feature {
+          float: left;
+          width: 52.1978%;
+          padding-right: 50px; }
+          .content .tab-area .tab-content ul li .feature h3 {
+            font-size: 16px;
+            color: #cf7529;
+            padding: 20px 0; }
+          .content .tab-area .tab-content ul li .feature p {
+            font-size: 13px;
+            color: #000000;
+            line-height: 20px; }
+        .content .tab-area .tab-content ul li .sidebar {
+          float: right;
+          width: 47.8022%; }
+          .content .tab-area .tab-content ul li .sidebar div {
+            padding: 20px 0;
+            border-bottom: 1px dotted #b8b8b8; }
+            .content .tab-area .tab-content ul li .sidebar div:first-child {
+              padding-top: 0; }
+            .content .tab-area .tab-content ul li .sidebar div:first-child + div + div {
+              border-bottom: 0; }
+            .content .tab-area .tab-content ul li .sidebar div img {
+              float: left;
+              padding-right: 20px; }
+            .content .tab-area .tab-content ul li .sidebar div h3 {
+              font-size: 16px;
+              color: #cf7529;
+              padding-bottom: 11px; }
+            .content .tab-area .tab-content ul li .sidebar div p {
+              font-size: 13px;
+              color: #000000;
+              line-height: 20px; }
+
+footer {
+  clear: both;
+  padding: 55px 0;
+  background: #000000;
+  background: -webkit-linear-gradient(#000000, #3a3a3a);
+  background: -o-linear-gradient(#000000, #3a3a3a);
+  background: -moz-linear-gradient(#000000, #3a3a3a);
+  background: linear-gradient(#000000, #3a3a3a);
+  background: -ms-linear-gradient(#000000, #3a3a3a); }
+  footer .footer-content {
+    margin: 0 auto;
+    width: 960px; }
+    footer .footer-content div {
+      width: 25%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      float: left; }
+      footer .footer-content div h4 {
+        font-size: 16px;
+        color: #ffffff;
+        padding-bottom: 20px; }
+      footer .footer-content div ul {
+        padding-bottom: 45px; }
+        footer .footer-content div ul li {
+          padding-bottom: 15px; }
+          footer .footer-content div ul li:before {
+            content: "•";
+            color: #aaaaaa;
+            padding-right: 5px; }
+          footer .footer-content div ul li a {
+            font-size: 13px;
+            color: #aaaaaa; }
+    footer .footer-content p {
+      clear: both;
+      color: #aaaaaa;
+      font-size: 11px; }
+
+/*# sourceMappingURL=base.css.map */

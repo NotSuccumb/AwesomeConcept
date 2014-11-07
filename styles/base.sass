@@ -1,0 +1,319 @@
+@import "reset"
+@import "mixin"
+
+
+body
+  background: url("../images/bg-image.jpg") no-repeat top center #4d5961
+  font: 13px/1.1em "Helvetica Neue",Helvetica,Arial,sans-serif
+
+  h2,h3,h4
+    font-weight: bold
+
+  a
+    text-decoration: none
+
+
+
+
+
+// -------------------------------------------------------
+// ------------          header         ------------------
+// -------------------------------------------------------
+
+
+header
+  height: $header-height
+  background-color: #ffffff
+  border-bottom: 1px solid #abacac
+
+
+  div
+    margin: 0 auto
+    width: 960px
+
+
+    h1
+      font:
+        size: 24px
+      line-height: 20px
+      text-transform: uppercase
+      float: left
+      padding: 30px 0
+
+
+      a
+        color: #464646
+
+        span
+          color: #ff0000
+          font:
+            weight: bold
+
+
+    nav
+      float: right
+
+
+      ul
+
+
+        li
+          float: left
+          padding: 22px 0
+
+          &:last-child
+            a
+              border-right: 0
+
+          &.active
+            border-bottom: 3px solid #ff0000
+
+
+            a
+              color: #ff0000
+              font:
+                weight: bold
+
+
+          a
+            display: inline-block
+            padding: 0 25px
+            font:
+              size: 14px
+            line-height: 34px
+            color: #000000
+            border-right: 1px dotted #cacaca
+
+
+            &:hover
+              color: #ff0000
+
+
+
+
+// -------------------------------------------------------
+// --------------         hero          ------------------
+// -------------------------------------------------------
+
+
+.hero
+  width: 960px
+  margin: 0 auto
+  padding: 160px 0 125px 0
+
+  div
+    width: 415px
+
+    h2
+      font:
+        size: 40px
+      color: #ffffff
+      line-height: 40px
+      letter-spacing: -1px
+      padding-bottom: 20px
+
+    p
+      font:
+        size: 14px
+      color: #ffffff
+      line-height: 20px
+      padding-right: 30px
+      padding-bottom: 20px
+
+    a
+      display: block
+      padding: 15px 25px
+      width: 90px
+      background-color: #b45a29
+      font:
+        size: 16px
+        weight: bold
+      color: #ffffff
+      @include gradient($btn-gradient-color-one, $btn-gradient-color-two)
+      @include border-radius(25)
+
+
+
+
+// -------------------------------------------------------
+// ------------          content        ------------------
+// -------------------------------------------------------
+
+
+.content
+  margin: 0 auto
+  width: 960px
+  padding-bottom: 55px
+
+  .tab-area
+    @include border-radius($tab-border-radius)
+    background-color: #ffffff
+    background: -webkit-linear-gradient(left, #ffffff,#ffffff, #d6d6d6)
+    background: -o-linear-gradient(left, #ffffff, #ffffff, #d6d6d6)
+    background: -moz-linear-gradient(left, #ffffff, #ffffff, #d6d6d6)
+    background: linear-gradient(left, #ffffff, #ffffff, #d6d6d6)
+    background: -ms-linear-gradient(left,  #ffffff, #d6d6d6)
+
+
+    .tabs
+      ul
+        display: table
+        width: 100%
+
+
+        li
+          display: table-cell
+          text-align: center
+          cursor: pointer
+          padding: 25px 0
+          font:
+            size: 16px
+            weight: bold
+          color: #ffffff
+          background-color: $li-bg-color
+          border-left: 1px solid #d9a375
+          border-right: 1px solid #a67142
+          border-collapse: collapse
+          @include gradient($tabs-gradient-one, $tabs-gradient-two)
+
+
+          &:first-child
+            border-top-left-radius: $tab-border-radius
+            border-left: 1px solid transparent
+
+          &:last-child
+            border-top-right-radius: $tab-border-radius
+            border-right: 1px solid transparent
+
+
+          &.active
+            color: #000000
+            background: transparent
+            border-left: 1px solid transparent
+            border-right: 1px solid transparent
+
+
+    .tab-content
+      padding: 35px 20px 45px 30px
+      height: 335px
+
+
+      ul
+        li
+          display: none
+
+
+          &.active
+            display: block
+
+
+          div
+            box-sizing: border-box
+            -moz-box-sizing: border-box
+            -webkit-box-sizing: border-box
+
+
+          .feature
+            float: left
+            width: 52.1978%
+            padding-right: 50px
+
+
+            h3
+              @include H3
+              padding: 20px 0
+
+
+            p
+              @include paragraph
+
+
+          .sidebar
+            float: right
+            width: 47.8022%
+
+
+            div
+              padding: 20px 0
+              border-bottom: 1px dotted #b8b8b8
+
+
+              &:first-child
+                padding-top: 0
+
+
+              &:first-child + div + div
+                border-bottom: 0
+
+
+              img
+                float: left
+                padding-right: 20px
+
+
+              h3
+                @include H3
+                padding-bottom: 11px
+
+
+              p
+                @include paragraph
+
+
+
+
+// -------------------------------------------------------
+// ------------          footer        -------------------
+// -------------------------------------------------------
+
+
+footer
+  clear: both
+  padding: 55px 0
+  @include gradient($footer-bg-color-one, $footer-bg-color-two)
+
+
+  .footer-content
+    margin: 0 auto
+    width: 960px
+
+
+    div
+      width: 25%
+      box-sizing: border-box
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      float: left
+
+
+      h4
+        font:
+          size: 16px
+        color: #ffffff
+        padding-bottom: 20px
+
+      ul
+        padding-bottom: 45px
+
+
+        li
+          padding-bottom: 15px
+
+
+          &:before
+            content: "\002022"
+            color: #aaaaaa
+            padding-right: 5px
+
+
+          a
+            font:
+              size: 13px
+            color: #aaaaaa
+
+
+    p
+      clear: both
+      color: #aaaaaa
+      font:
+        size: 11px

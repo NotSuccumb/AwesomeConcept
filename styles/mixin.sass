@@ -1,0 +1,39 @@
+@import "constants"
+
+
+@mixin gradient($color-one, $color-two)
+  background: $color-one
+  background: -webkit-linear-gradient($color-one, $color-two)
+  background: -o-linear-gradient($color-one, $color-two)
+  background: -moz-linear-gradient($color-one, $color-two)
+  background: linear-gradient($color-one, $color-two)
+  background: -ms-linear-gradient($color-one, $color-two)
+
+
+@mixin border-radius($value)
+  -webkit-border-radius: $value
+  -moz-border-radius: $value
+  border-radius: $value+px
+
+@mixin H3
+  font:
+    size: 16px
+  color: $h3-color
+
+
+@mixin paragraph
+  font:
+    size: 13px
+  color: #000000
+  line-height: 20px
+
+
+@mixin responsiveImgs
+  max-width: 100%
+  height: auto
+  display: block
+
+
+
+
+

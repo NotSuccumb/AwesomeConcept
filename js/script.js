@@ -1,13 +1,13 @@
 $(function(){
-    $(".tabs-area .tabs li").each(function(){
+    $(".tab-area .tabs li").each(function(){
         $(this).click(function(){
-            if(!$(this).hasClass('selected')){
-                $(this).parent().find("li").removeClass("selected");
+            if(!$(this).hasClass('active')){
+                $(this).parent().find("li").removeClass("active");
                 var selectedClass = $(this).attr('class');
-                $(this).addClass("selected");
-                var tabArea = $(this).closest('.tabs-area');
-                tabArea.find(".box-wrap > div").hide();
-                tabArea.find(".box-wrap ."+ selectedClass).show();
+                $(this).addClass("active");
+                var tabArea = $(this).closest('.tab-area');
+                tabArea.find(".tab-content li").hide();
+                tabArea.find(".tab-content ."+ selectedClass).show();
             }
         });
     });
