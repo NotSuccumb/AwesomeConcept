@@ -1,14 +1,23 @@
 @import "constants"
 
 
-@mixin gradient($color-one, $color-two)
+@mixin gradient-vertical($color-one, $color-two)
   background: $color-one
-  background: -webkit-linear-gradient($color-one, $color-two)
-  background: -o-linear-gradient($color-one, $color-two)
-  background: -moz-linear-gradient($color-one, $color-two)
-  background: linear-gradient($color-one, $color-two)
-  background: -ms-linear-gradient($color-one, $color-two)
-
+  background: -webkit-linear-gradient(top, $color-one, $color-two)
+  background: -o-linear-gradient(top, $color-one, $color-two)
+  background: -moz-linear-gradient(top, $color-one, $color-two)
+  background: linear-gradient(to bottom, $color-one, $color-two)
+  background: -ms-linear-gradient(top, $color-one, $color-two)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-one, endColorstr=$color-two, GradientType=0 )
+  
+@mixin gradient-horizontal($color-one, $color-two)
+  background: $color-one
+  background: -webkit-linear-gradient(left, $color-one, $color-two)
+  background: -o-linear-gradient(left, $color-one, $color-two)
+  background: -moz-linear-gradient(left, $color-one, $color-two)
+  background: linear-gradient(to right, $color-one, $color-two)
+  background: -ms-linear-gradient(left, $color-one, $color-two)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-one, endColorstr=$color-two, GradientType=1 )
 
 @mixin border-radius($value)
   -webkit-border-radius: $value

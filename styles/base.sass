@@ -147,7 +147,7 @@ header
 
 
   .tab-area
-  	@include gradient-horizontal(#ffffff, #d6d6d6)
+  	@include gradient-horizontal($tab-area-gradient-color-one, $tab-area-gradient-color-two)
     @include border-radius($tab-border-radius)
 
 
@@ -170,7 +170,7 @@ header
           border-left: 1px solid #d9a375
           border-right: 1px solid #a67142
           border-collapse: collapse
-          @include gradient($tabs-gradient-one, $tabs-gradient-two)
+          @include gradient-vertical($tabs-gradient-one, $tabs-gradient-two)
 
 
           &:first-child
@@ -266,7 +266,7 @@ header
 footer
   clear: both
   padding: 55px 0
-  @include gradient($footer-bg-color-one, $footer-bg-color-two)
+  @include gradient-vertical($footer-bg-color-one, $footer-bg-color-two)
 
 
   .footer-content
